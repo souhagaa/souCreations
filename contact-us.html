@@ -290,32 +290,53 @@
                                 <!--<p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+1-888705770">+1-888 705 770</a></p>-->
                             </li>
                             <li>
-                                <p><i class="fas fa-envelope"></i>Email: <a href="mailto:contactinfo@gmail.com">souha.gaaloul@gmail.com</a></p>
+                                <p><i class="fas fa-envelope"></i>Email: <a href="mailto:souha.gaaloul@gmail.com">souha.gaaloul@gmail.com</a></p>
                             </li>
+                        </ul>
+                    </div>
+
+                    <div class="contact-info-left">
+                        <h2>Messages</h2>
+                        <ul>
+                            <li>
+                                <p><i class="fas fa-user"></i>Message from: <span id="userMsg"></span> </p>
+                            </li>
+                            <li>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-question"></i>Subject: <span id="outputSubject"></span> </p>
+                            </li>
+                          </li>
+                          <li>
+                              <p><i class="fas fa-comment-dots"></i>Message: <span id="outputMsg"></span> </p>
+                          </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-8 col-sm-12">
                     <div class="contact-form-right">
                         <h2>GET IN TOUCH</h2>
-                        <p>YOu can get in touch with us by filling this form and we will respond to you as soon as possible. Please leave your contact info so we can reach out to you.</p>
-                        <form id="contactForm">
+                        <p>You can get in touch with us by filling this form and we will respond to you as soon as possible. Please leave your contact info so we can reach out to you.</p>
+                        <form data-toggle="validator" id="contactForm">
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name" required>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <input type="text" placeholder="Your Email" id="email" class="form-control" name="name" required data-error="Please enter your email">
+                                        <!--<input type="text" placeholder="Your Email" id="email" class="form-control" name="name" required data-error="invalid email address" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required>-->
+                                        <input type="email" placeholder="Your Email" id="email" class="form-control" name="name" required data-error="Please provide a valid email address" pattern="/^[a-zA-Z0-9.!#$%'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
+
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <input type="text" placeholder="Your number" id="number" class="form-control" name="number" required data-error="Please enter your phone number">
+                                        <input type="text" placeholder="Your phone number ## ### ###" id="number" class="form-control" name="name" required data-error="Please enter an 8 digit phone number" pattern="[0-9]{8}" aria-label="8-digit area code" size="8">
+                                        <!--<input type="text" placeholder="Your number" id="number" class="form-control" name="number" required data-error="Please enter your phone number">-->
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
@@ -479,7 +500,7 @@
                                     <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+1-888705770">+1-888 705 770</a></p>
                                 </li>-->
                                 <li>
-                                    <p><i class="fas fa-envelope"></i>Email: <a href="mailto:contactinfo@gmail.com">souha.gaaloul@gmail.com</a></p>
+                                    <p><i class="fas fa-envelope"></i>Email: <a href="mailto:souha.gaaloul@gmail.com">souha.gaaloul@gmail.com</a></p>
                                 </li>
                             </ul>
                         </div>
@@ -505,7 +526,9 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- ALL PLUGINS -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.8-fix/jquery.nicescroll.min.js"></script>
     <script src="js/jquery.superslides.min.js"></script>
+    <script src="js/formProcessing.js"></script>
     <script src="js/bootstrap-select.js"></script>
     <script src="js/inewsticker.js"></script>
     <script src="js/bootsnav.js."></script>

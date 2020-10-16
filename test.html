@@ -35,22 +35,6 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
 
-
-  <script>
-  $(document).ready(function() {
-
-    $('#top').$(this).load("./top.html");
-
-  });
-  </script>
-
-  <script>
-  $(document).ready(function() {;
-    $("#bottom").$(this).load("./bottom.html", function() {console.log("loaded")});
-
-  });
-  </script>
-
   </head>
 
   <body>
@@ -138,6 +122,16 @@
     <!-- End Cart -->
 
 <div id="bottom"> </div>
+<script>
+    $(document).ready(function() {
+
+      $('#top').load("top.html");
+
+    });
+    $(document).ready(function() {
+      $("#bottom").load("bottom.html", function() {console.log('loaded')});
+    });
+    </script>
 </body>
 
 </html>
