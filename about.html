@@ -89,8 +89,8 @@
                   <div class="our-link">
                       <ul>
                           <!-- <li><a href="#">My Account</a></li> -->
-                          <li><a href="#">Our location</a></li>
-                          <li><a href="#">Contact Us</a></li>
+                          <li><a href="contact-us.html">Our location</a></li>
+                          <li><a href="contact-us.html">Contact Us</a></li>
                       </ul>
                   </div>
               </div>
@@ -281,10 +281,29 @@
                 <div class="col-lg-6">
                     <h2 class="noo-sh-title">We are <span>Sou's Creations</span></h2>
                     <p>Sou's Creations is a brand created in 2020 by Souha Gaaloul. <br>
-                    Souha is a computer science engineer, who has always loved art so she thought why not give it a try?</p>
-                    <p> THis was her first piece to embroider
+                    Souha is a computer science engineer, who has always loved art </p>
+                      <img id="art-me" src="images/myWork/me1.png" alt="Owner of Sou's Creations" style="width:100%;max-width:300px">
+
+                    <p> So she thought why not give it a try?</p>
+                    <p> This was my first piece to embroider inspired by the artist Sheena Liam:
                         </p>
-                    <img src=""/>
+                        <!-- Trigger the Modal -->
+                        <img id="first-work" src="images/myWork/first.jpg" alt="first-work" style="width:100%;max-width:300px">
+
+                        <!-- The Modal -->
+                        <div id="first-modal" class="modal">
+
+                          <!-- The Close Button -->
+                          <span class="close">&times;</span>
+
+                          <!-- Modal Content (The Image) -->
+                          <img class="modal-content" id="modal-content0">
+
+                          <!-- Modal Caption (Image Text) -->
+                          <div id="caption"> My first embroidered piece</div>
+                        </div>
+
+                    <!--<img id ="first-work" src="images/myWork/first.jpg"/>-->
                 </div>
                 <div class="col-lg-6">
                     <div class="banner-frame"> <img class="img-thumbnail img-fluid" src="images/about-img.jpg" alt="" />
@@ -295,49 +314,49 @@
                 <div class="col-sm-6 col-lg-4">
                     <div class="service-block-inner">
                         <h3>We are Trusted</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <p>Your satisfaction is our priority</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4">
                     <div class="service-block-inner">
                         <h3>We are Professional</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <p>Your commission will be prepared in the most brief delays</p>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-4">
+                <!--<div class="col-sm-6 col-lg-4">
                     <div class="service-block-inner">
                         <h3>We are Expert</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                     </div>
-                </div>
+                </div>-->
             </div>
             <div class="row my-4">
                 <div class="col-12">
-                    <h2 class="noo-sh-title">Who's behid Sou's Creations?</h2>
+                    <h2 class="noo-sh-title">Who's behind Sou's Creations?</h2>
                 </div>
                 <div class="col-sm-6 col-lg-3">
                     <div class="hover-team">
-                        <div class="our-team"> <img src="images/img-1.jpg" alt="" />
+                        <div class="our-team"> <img src="images/myWork/me.jpg" alt="" />
                             <div class="team-content">
                                 <h3 class="title">Souha Gaaloul</h3> <span class="post">Owner</span> </div>
                             <ul class="social">
                                 <li>
-                                    <a href="#" class="fab fa-facebook"></a>
+                                    <a href="https://www.facebook.com/souha.gaa/" class="fab fa-facebook" target="_blank"></a>
                                 </li>
                                 <li>
-                                    <a href="#" class="fab fa-instagram"></a>
+                                    <a href="https://www.instagram.com/souha.gaaloul/" class="fab fa-instagram" target="_blank"></a>
                                 </li>
                             </ul>
                             <div class="icon"> <i class="fa fa-plus" aria-hidden="true"></i> </div>
                         </div>
                         <div class="team-description">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna diam, maximus ut ullamcorper quis, placerat id eros. Duis semper justo sed condimentum rutrum. Nunc tristique purus turpis. Maecenas vulputate. </p>
+                            <p> Computer Science engineer by tuition, artist for life, </br> Creator of Sou's Creations </p>
                         </div>
                         <hr class="my-0"> </div>
                 </div>
-                <div class="col-sm-6 col-lg-3">
+                <!--<div class="col-sm-6 col-lg-3">
                     <div class="hover-team">
-                        <div class="our-team"> <img src="images/img-2.jpg" alt="" />
+                        <div class="our-team"> <img src="images/me.jpg" alt="" />
                             <div class="team-content">
                                 <h3 class="title">Kristiana</h3> <span class="post">Web Developer</span> </div>
                             <ul class="social">
@@ -412,7 +431,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna diam, maximus ut ullamcorper quis, placerat id eros. Duis semper justo sed condimentum rutrum. Nunc tristique purus turpis. Maecenas vulputate. </p>
                         </div>
                         <hr class="my-0"> </div>
-                </div>
+                </div>-->
             </div>
         </div>
     </div>
@@ -589,6 +608,7 @@
     <script src="js/form-validator.min.js"></script>
     <script src="js/contact-form-script.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/modal_img.js"></script>
 </body>
 
 </html>
